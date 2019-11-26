@@ -1,7 +1,0 @@
-{
-  "name": "ToGo",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
