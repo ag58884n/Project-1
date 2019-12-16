@@ -1,0 +1,349 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="warning"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>ToGo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="LoaderDiv">
+    <h3 id="LoaderDivh3">
+      Many needs, one app
+    </h3>
+    <h4 id="LoaderDivh4">
+      Get it ToGo!
+    </h4>
+    <ion-card id="searchbox">
+      <ion-input type="text" value="" autocomplete="off" id="autocomplete" placeholder="Search for a location"></ion-input>
+    </ion-card>
+    <ion-button color="warning" expand="block" id="LoaderButton" (click)="Proceed()">Proceed</ion-button>
+  </div>
+  <div id="FeatureDiv">
+    <h2 id="featureheading">Features</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div class="featureimg">
+            <img src="../assets/Lt.png">
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="featureinfo">
+            <h3>Live Tracking</h3>
+            <p>Users can get live updates about their package. 24 x 7 Tracking available.</p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="featureimg">
+            <img src="../assets/g.png">
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="featureinfo">
+            <h3>Free delivery for first 5 orders.</h3>
+            <p>Our new users get free limited deliveries.</p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="featureimg">
+            <img src="../assets/b.jpg">
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="featureinfo">
+            <h3>No Minimum Order</h3>
+            <p>Anything Delivered without minimum order value.</p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="featureimg">
+            <img src="../assets/c.png">
+          </div>
+        </ion-col>
+        <ion-col>
+          <div class="featureinfo">
+            <h3>Distance Based Charges</h3>
+            <p>Charges of the Delivery is based on the Distance not the weight of the package.</p>
+          </div>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-grid>
+  </div>
+  <ion-card id="subscriptioncard">
+    <h2 class="spheader">Subscription Plans</h2>
+    <div id="SubscriptionDiv">
+      <ion-card class="plancards">
+        <div class="planheader">
+          <h3>
+            Good
+          </h3>
+        </div>
+
+        <div class="plandetails">
+          <ion-label>Here will be the details of plan 1</ion-label>
+        </div>
+        <div class="plansubmit">
+          <ion-button color="warning">
+            Submit
+          </ion-button>
+        </div>
+      </ion-card>
+
+      <ion-card class="plancards">
+        <div class="planheader">
+          <h3>
+            Better
+          </h3>
+        </div>
+
+        <div class="plandetails">
+          <ion-label>Here will be the details of plan 2</ion-label>
+        </div>
+        <div class="plansubmit">
+          <ion-button color="warning">
+            Submit
+          </ion-button>
+        </div>
+      </ion-card>
+
+      <ion-card class="plancards">
+        <div class="planheader">
+          <h3>
+            Best
+          </h3>
+        </div>
+
+        <div class="plandetails">
+          <ion-label>Here will be the details of plan 3</ion-label>
+        </div>
+        <div class="plansubmit">
+          <ion-button color="warning">
+            Submit
+          </ion-button>
+        </div>
+      </ion-card>
+    </div>
+
+  </ion-card>
+  <div id="About_UsDiv">
+    <h2 class="spheader">About the Team</h2>
+    <ion-card class="aboutuscards">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="aboutusimg">
+              <img class="imageid" src="../assets/purti.jpeg">
+            </div>
+          </ion-col>
+          <ion-col>
+            <h2>Project Manager</h2>
+            <div class="aboutusname">
+              <h3>Purti Choudhary</h3>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="aboutusinfo">
+            <p>I am a Computer Science graduate student. This application will create a better everyday life for everyone. I have also worked in Image processing, Web technologies and Virtual Prototyping domain.</p>
+          </div>
+        </ion-row>
+      </ion-grid>
+     </ion-card>
+    <ion-card class="aboutuscards">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h2>Product Owner</h2>
+            <div class="aboutusname">
+              <h3>Aniket Munim</h3>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="aboutusimg">
+              <img class="imageid" src="../assets/aniket.jpeg">
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="aboutusinfo">
+            <p>Being a part of this project made me realise that we always have opportunity to explore new things and gave a real life experience.</p>
+          </div>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card class="aboutuscards">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="aboutusimg">
+              <img class="imageid" src="../assets/samiksha.jpg">
+            </div>
+          </ion-col>
+          <ion-col>
+            <h2>Lead Business Analyst</h2>
+            <div class="aboutusname">
+              <h3>Samiksha Mathur</h3>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="aboutusinfo">
+            <p>Hello there!! I am doing Masters in Computer Science. Apart from my role as Business Analyst, I like developing web applications, hiking and spending time with nature. I enjoy creating things that focus on creativity, simplicity and elegance.</p>
+          </div>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card class="aboutuscards">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h2>• Lead Developer</h2>
+            <h2>• Tester</h2>
+            <div class="aboutusname">
+              <h3>Aditya Gajjar</h3>
+            </div>
+
+          </ion-col>
+          <ion-col>
+            <div class="aboutusimg">
+              <img class="imageid" src="../assets/aditya.jpg">
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="aboutusinfo">
+            <p>Hi! I am student at Pace University. Currently a Graduate student in Computer-Science. I have worked on projects that involve building Android applications and web-based applications.</p>
+          </div>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card class="aboutuscards">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="aboutusimg">
+              <img class="imageid" src="../assets/Amrit.jpeg">
+            </div>
+          </ion-col>
+          <ion-col>
+            <h2>• Lead Developer</h2>
+            <h2>• Tester</h2>
+            <div class="aboutusname">
+              <h3>Amrit Choudhary</h3>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="aboutusinfo">
+            <p> In spite of having the opportunity to lead a company as a director I always wanted and aimed at being a leader who would grow and move ahead with his entire team. I as a businessman promotes team work rather than individuality.</p>
+          </div>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card class="aboutuscards">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h2>Developer</h2>
+            <div class="aboutusname">
+              <h3>Anil Bandari</h3>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="aboutusimg">
+              <img class="imageid" src="../assets/anil.jpeg">
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="aboutusinfo">
+            <p>I am proud to say that I am part of the ToGo project. I really very much connect to the concept of it. I enjoyed every bit of involvement.</p>
+          </div>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card class="aboutuscards">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="aboutusimg">
+              <img class="imageid" src="../assets/Laxshmi.jpeg">
+            </div>
+          </ion-col>
+          <ion-col>
+            <h2>Database Analyst</h2>
+            <div class="aboutusname">
+              <h3>Lakshmi Chamarthi</h3>
+            </div>
+
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="aboutusinfo">
+            <p>I am overwhelmed to be a part of To-Go project. To-Go is a delivery service application and I play the role of DBA in the development.</p>
+          </div>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card class="aboutuscards">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h2>Lead QA Analyst</h2>
+            <div class="aboutusname">
+              <h3>Khaja Nazish</h3>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="aboutusimg">
+              <img class="imageid" src="../assets/nazish.jpeg">
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <div class="aboutusinfo">
+            <p>I am pleased to be a part of To-Go project. It has helped me in understanding the concept of delivery service application.</p>
+          </div>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+  <div class="Footer">
+    <ion-card class="Footer">
+      <h2> Contact Us</h2>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div id="contact">
+              <p><span style="text-decoration: underline; font-size: 20px">Call</span><span style="font-size: 20px">:-</span></p>
+              <p><span class="dot2"></span>T: 123-456-7890</p>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div id="email">
+              <p><span style="text-decoration: underline;font-size: 20px">E-mail</span><span style="font-size: 20px">:-</span></p>
+              <p><span class="dot2"></span><a href="mailto:ag58884n@pace.edu">ag58884n@pace.edu</a></p>
+              <p><span class="dot2"></span><a href="mailto:ab08199n@pace.edu">ab08199n@pace.edu</a></p>
+              <p><span class="dot2"></span><a href="mailto:pc25613n@pace.edu">pc25613n@pace.edu</a></p>
+              <p><span class="dot2"></span><a href="mailto:ac74426n@pace.edu">ac74426n@pace.edu</a></p>
+              <p><span class="dot2"></span><a href="mailto:sm78872n@pace.edu">sm78872n@pace.edu</a></p>
+              <p><span class="dot2"></span><a href="mailto:fk03657n@pace.edu">fk03657n@pace.edu</a></p>
+              <p><span class="dot2"></span><a href="mailto:lc65775n@pace.edu">lc65775n@pace.edu</a></p>
+              <p><span class="dot2"></span><a href="mailto:am57028n@pace.edu">am57028n@pace.edu</a></p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="warning"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="infomodal()">
+        <ion-icon slot="icon-only" name="person"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Sign-In
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div id="SignInInputDiv">
+  <ion-card id="signincard">
+    <ion-label class="border">Enter Email: -</ion-label>
+    <ion-input class="border" type="text" autocomplete="off" placeholder="Enter Email Here" [(ngModel)]="username"></ion-input>
+    <br>
+    <ion-label class="border">Enter Password: -</ion-label>
+    <ion-input class="border" type="password" autocomplete="off" placeholder="Enter Password Here" [(ngModel)]="password"></ion-input>
+  </ion-card>
+</div>
+  <ion-button id="signinbutton" expand="block" color="warning" (click)="SignIn()">Sign-In</ion-button>
+  <ion-button expand="block" color="danger" (click)="SignInwithGoogle()">Sign-In with Google</ion-button>
+  <ion-button expand="block" color="primary" (click)="SignInwithFacebook()">Sign-In Facebook</ion-button>
+  <ion-button expand="block" color="warning" (click)="Signup()">Sign-Up</ion-button>
+
+
+  <!--
+    <div *ngIf="selectedItem" padding>
+      You navigated here from <b>{{selectedItem.title }}</b>
+    </div>
+  -->
+</ion-content>

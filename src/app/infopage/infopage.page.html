@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar  color="tertiary">
+    <ion-title>Info Page</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="SignUpInputDiv">
+    <ion-card id="signincard">
+      <div id="usernamediv">
+        <ion-label class="info">Email: - {{user}}</ion-label>
+      </div>
+    </ion-card>
+  </div>
+  <ion-button expand="block" color="warning" (click)="Logout()">Logout</ion-button>
+  <ion-button expand="block" color="danger" (click)="Delete()">Delete Account</ion-button>
+</ion-content>
